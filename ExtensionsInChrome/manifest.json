@@ -1,0 +1,25 @@
+// 清单文件: JSON格式的目录, 包含一些属性, 比如扩展程序的名称与描述, 版本号等等. 以及使用清单文件来向Chrome浏览器声明扩展程序将会做什么, 以及为了完成这些任务所需要的权限
+{
+    //声明我们使用清单文件格式的版本2, 必须包含(版本1是旧的, 已弃用)
+    "manifest_version" : 2,     
+
+    //扩展程序的名称
+    "name": "Google_Time",
+
+    //扩展程序的描述
+    "description": "Life is short, i use JS",
+
+    //版本号
+    "version": "1.0",
+
+    "browser_action": {
+        //默认图标
+        "default_icon": "icon.png",
+        
+
+        "default_title": "Learning by doing",
+        
+        //弹出窗口
+        "default_popup": "popup.html"
+    }
+}

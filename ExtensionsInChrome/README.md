@@ -9,3 +9,7 @@ It made an extension to Google Chrome Browser that shows a simple clock and memo
 
 关于建立Chrome扩展程序的办法, 其实官网上已经介绍很详细了:
 <a href="https://crxdoc-zh.appspot.com/extensions/getstarted">入门:建立Chrome扩展程序</a>
+
+*******************************
+2017年3月7日更新:
+使用localStorage使得备忘录可以存储在本地

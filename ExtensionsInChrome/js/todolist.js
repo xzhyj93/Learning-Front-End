@@ -47,17 +47,13 @@ todoapp.controller('todolistcontroller', ['$scope', function($scope){
         localStorage.setItem(key,listToStr($scope.todolist))
     }
     $scope.doneCount = function(){
-        console.log($scope.todolist)
         var temp = $scope.todolist.filter(function(item){
-            console.log(item.done)
             return (item.done == true)
         });
         return temp.length
     }
     //当任务完成时也要更新localStorage
     $scope.update = function(item){
-        console.log($scope.todolist)
         localStorage.setItem(key,listToStr($scope.todolist))
-
     }
 }]);

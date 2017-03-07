@@ -47,8 +47,10 @@ todoapp.controller('todolistcontroller', ['$scope', function($scope){
         localStorage.setItem(key,listToStr($scope.todolist))
     }
     $scope.doneCount = function(){
+        console.log($scope.todolist)
         var temp = $scope.todolist.filter(function(item){
-            return item.done
+            console.log(item.done)
+            return (item.done == true)
         });
         return temp.length
     }

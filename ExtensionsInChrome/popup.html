@@ -42,7 +42,7 @@
                 </button>
                 <div class="checkbox">
                     <label>
-                        <input ng-model="item.done" type="checkbox" ng-click=update(item)></input>
+                        <input ng-model="item.done" type="checkbox" ng-change=update(item)></input>
                         <span>{{item.text}}</span>
                     </label>
                 </div>
